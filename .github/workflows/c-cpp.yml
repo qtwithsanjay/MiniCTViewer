@@ -17,7 +17,9 @@ jobs:
     - name: Install Qt Dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y qt6-base-dev build-essential
+        sudo apt-get install -y qt6-base-dev qt6-base-dev-tools build-essential
+        # Link qmake6 to standard qmake so the system can find it automatically
+        sudo ln -s /usr/bin/qmake6 /usr/bin/qmake
 
     - name: Configure Project with Qmake
       run: qmake MiniCTViewer.pro
