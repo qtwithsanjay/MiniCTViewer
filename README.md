@@ -1,4 +1,5 @@
-Mini Diagnostic CT Viewer Pro
+Mini Diagnostic CT Viewer
+
 =============================
 
 A desktop medical imaging utility developed in C++ using the Qt 6 framework. 
